@@ -1,11 +1,8 @@
 package com.example.semana2;
 import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
-
-import org.springframework.web.bind.annotation.GetMapping;
 
 @RestController
 public class PeliculasController {
@@ -14,14 +11,9 @@ public class PeliculasController {
     public PeliculasController() {
         peliculas.add(new Peliculas(1, "Tiburón", 1975, "Steven Spielberg", "Terror", "Un gran tiburón blanco ataca a los bañistas en un pueblo costero."));
         peliculas.add(new Peliculas(2, "Terminator", 1984, "James Cameron", "Ciencia Ficción", "Un cyborg asesino del futuro regresa en el tiempo para matar a Sarah Connor."));
-        peliculas.add(new Peliculas(3, "Casablanca", 1942, "Michael Curtiz", "Romance", "Un expatriado se reencuentra con un antiguo amor durante la Segunda Guerra Mundial."));
-        peliculas.add(new Peliculas(4, "Psicosis", 1960, "Alfred Hitchcock", "Suspenso", "Una mujer desaparece después de robar dinero y termina en un misterioso motel."));
-        peliculas.add(new Peliculas(5, "Ciudadano Kane", 1941, "Orson Welles", "Drama", "La vida y muerte de un magnate de la prensa."));
-        peliculas.add(new Peliculas(6, "Lo que el viento se llevó", 1939, "Victor Fleming", "Drama", "Una historia de amor durante la Guerra Civil estadounidense."));
-        peliculas.add(new Peliculas(7, "Ben-Hur", 1959, "William Wyler", "Épica", "Un príncipe judío lucha contra el Imperio Romano."));
-        peliculas.add(new Peliculas(8, "El Padrino", 1972, "Francis Ford Coppola", "Crimen", "La historia de una familia mafiosa en Nueva York."));
-        peliculas.add(new Peliculas(9, "Metrópolis", 1927, "Fritz Lang", "Ciencia Ficción", "Una ciudad futurista dividida entre la clase trabajadora y la élite."));
-        peliculas.add(new Peliculas(10, "Cantando bajo la lluvia", 1952, "Gene Kelly", "Musical", "Una comedia sobre la transición del cine mudo al sonoro."));
+        peliculas.add(new Peliculas(3, "Gremlins", 1984, "Joe Dante", "Terror / Comedia", "Un joven recibe una extraña criatura como mascota, que desata el caos cuando se multiplican."));
+        peliculas.add(new Peliculas(4, "Akira", 1988, "Katsuhiro Otomo", "Animación / Ciencia Ficción", "En un futuro post-apocalíptico, un joven desarrolla poderes psíquicos que amenazan con destruir Neo-Tokyo."));
+        peliculas.add(new Peliculas(5, "Dark City", 1998, "Alex Proyas", "Ciencia Ficción / Misterio", "Un hombre sin recuerdos lucha por descubrir la verdad en una ciudad controlada por seres extraños."));
     }
 
     @GetMapping("/peliculas")
